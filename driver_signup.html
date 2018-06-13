@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Driver Signup</title>
+    <link href = "styles.css" rel = "stylesheet">
+</head>
+<body>
+        <h2>Signup</h2>
+        <div id="parent">
+            <form>
+                <table>
+                        <tr>
+                                <td>First Name</td><td><input type="text" name="dfname"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Last Name</td><td><input type="text" name="dlname"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Sex</td><td><input type="radio" name="dsex" 
+                                    value="Male"/>Male
+                                    <input type="radio" name="dsex" value="Female"/>Female
+                                    <input type="radio" name="dsex" value="Other"/>Other
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Email</td><td><input type="email" name="demail"/></td>
+                            </tr>
+                            <tr>
+                                <td>Username</td><td><input type="text" name="duname"/></td>
+                            </tr>
+                            <tr>
+                                <td>Password</td><td><input type="password" name="dpswrd"/></td>
+                            </tr>
+                            <tr>
+                                <td>Re-enter password</td><td><input type="password" name=
+                                    "rdpswrd"/></td>
+                            </tr>
+                </table>
+                
+                <input type="button" onclick="check(this.form)" value="SUBMIT"/>
+
+            </form>
+        </div>
+</body>
+</html>
