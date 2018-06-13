@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link href = "styles.css" rel = "stylesheet">
+</head>
+<body>
+    <h1>Ride My Way</h1>
+    <div id="opening">
+        This is an app that helps a driver and a passenger link up
+        with each other. It comes with ease of use and the 
+        convenience you ever needed. You can be sure you 
+        just made the right choice.
+    </div>
+    <hr>
+    <h2>Login</h2>
+    <div id="parent">
+        <form>
+            <table>
+                    <tr>
+                            <td>Username</td><td><input type="text" name="userid"/></td>
+                        </tr>
+                        <tr>
+                        </tr>
+                        <tr>
+                            <td>Password</td><td><input type="tpassword" name="pswrd"/>
+                            </td>
+                        <tr>
+                            <td><input type="button" onclick="check(this.form)" 
+                                value="Login"/></td>
+                            <td><input type="reset" value="Cancel"/></td>
+                        </tr>
+            </table>
+            
+            <p>Signup now as:</p>
+            <p><a href="driver_signup.html">Driver</a> or <a href="passenger_signup.html">
+                Passenger</a> </p>
+        </form>
+    </div>
+    
+    <script lang="javascript">
+        function check(form) /*to check userid and password*/{
+            if(form.userid.value=="myuserid" && form.pswrd.value=="mypswrd"){
+                window.open('target.html')/*opens target page if both conditions are kk*/
+            }
+            else{
+                alert("Either Password or username is incorrect")/*dsplays t
+                he error message*/
+            }
+        }
+
+    </script>
+</body>
+</html>
